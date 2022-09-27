@@ -23,7 +23,7 @@ const Career: React.FC = () => {
             </header>
             <article>
                 {contents.map((content, index) => {
-                    return <CareerContent content={content} key={index} />
+                    return <CareerContent content={content} key={`CareerContent-${index}`} />
                 })}
             </article>
         </section>
