@@ -2,7 +2,7 @@ import { FC } from "react"
 
 const Information: FC = () => {
     return (
-        <section>
+        <>
             <h2 className="h2">
                 인적사항
             </h2>
@@ -12,7 +12,7 @@ const Information: FC = () => {
                 휴대폰 : 010-7188-8760
                 email : gostroad37@gmail.com
             </article>
-        </section>
+        </>
     )
 }
 

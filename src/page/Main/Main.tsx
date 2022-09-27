@@ -7,19 +7,12 @@ import Certificate from "components/EtCetera"
 
 const Main: FC = () => {
     return (
-        <div style={{
-            width: "80%",
-            maxWidth: "1080px",
-            border: "0.4px solid gray",
-            borderRadius: "5px",
-            margin: "130px auto 0px",
-            padding: "10px 11px",
-        }}>
+        <section>
             <Information />
             <Introduce />
             <Career />
             <Certificate />
-        </div>
+        </section>
     )
 }
 

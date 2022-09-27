@@ -2,7 +2,7 @@ import { FC } from "react"
 
 const Introduce: FC = () => {
     return (
-        <section>
+        <>
             <h2 className="h2">
                 간단소개
             </h2>
@@ -12,7 +12,7 @@ const Introduce: FC = () => {
                 2017.09~2018.08 년까지 콘텐츠를 제작하는 회사에서 콘텐츠 발행, 관리 등의 자동화를 하는 업무를 진행하였고,
                 이후 커머스 회사에서 쇼핑몰 관리 서비스를 개발, 운영 하는 업무를 진행하였습니다.
             </article>
-        </section>
+        </>
     )
 }
 

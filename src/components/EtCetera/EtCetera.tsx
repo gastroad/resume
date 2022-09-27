@@ -25,16 +25,14 @@ const EtCetera: FC = () => {
 
     return (
         <>
-            <section>
-                <h2 className="h2">
-                    자격증
-                </h2>
-                <article>
-                    {contents.map((content, index) => {
-                        return <EtCeteraContent content={content} key={`EtCeteraContent-${index}`} />
-                    })}
-                </article>
-            </section>
+            <h2 className="h2">
+                기타
+            </h2>
+            <article style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+                {contents.map((content, index) => {
+                    return <EtCeteraContent content={content} key={`EtCeteraContent-${index}`} />
+                })}
+            </article>
             {isLoading && <LoadingSpinner />}
         </>
     )

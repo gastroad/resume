@@ -10,7 +10,7 @@
     font-weight: 600;
 }
 .header {
-    background: #20232a;
+    background: rgba(32, 35, 42, 0.9);
     height: 100px;
     position: fixed;
     top: 0px;
@@ -27,10 +27,16 @@
 }
 
 section {
-    margin-bottom: 30px;
+    width: 80%;
+    max-width: 1080px;
+    border: 0.4px solid gray;
+    border-radius: 5px;
+    margin: 130px auto 50px;
+    padding: 10px 11px;
 }
 article {
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 .career-list {
     border-radius: 3px;
@@ -44,7 +50,7 @@ article {
         padding: 10px 10px 10px 15px;
         border-radius: 3px;
         overflow: auto;
-        background-color: 240, 240, 240;
+        background-color: rgb(240, 240, 240);
     }
     h3 {
         margin-bottom: 10px;
@@ -68,9 +74,13 @@ article {
 .footer {
     width: 100%;
     height: 30px;
-    background: #282c34;
+    background: rgba(40, 44, 52, 0.9);
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px;
 }
