@@ -2,12 +2,9 @@ import { FC } from "react"
 
 const Header: FC = () => {
     return (
-        <header>
-            이름 : 진현성
-            생년월일 : 2000.02.15
-            휴대폰 : 010-7188-8760
-            email : gostroad37@gmail.com
-        </header>
+        <header style={{ background: "#20232a", height: "100px", position: "fixed", top: "0px", left: "0px", width: "100%" }}>
+            <h1 style={{ color: "white", display: "flex", justifyContent: "center", alignItems: "center", height: "100%", fontSize: "37px" }}>resume</h1>
+        </header >
     )
 }
 export default Header
