@@ -1,0 +1,35 @@
+
+import { useEffect, useState } from "react"
+import { getEtCeteraData } from "src/api/request"
+import EtCeteraContent from "./EtCeteraContent"
+
+
+const EtCetera: React.FC = () => {
+    const [contents, setContents] = useState<Certificate[]>([{
+        name: "", date: "", content: ""
+    }]);
+
+    const getEtCeteraContents = async () => {
+        const etCeteraData = await getEtCeteraData()
+        setContents(etCeteraData)
+    }
+
+    useEffect(() => {
+        getEtCeteraContents()
+    }, []);
+
+    return (
+        <section>
+            <header>
+                자격증
+            </header>
+            <article>
+                {contents.map((content) => {
+                    return <EtCeteraContent content={content} />
+                })}
+            </article>
+        </section>
+    )
+}
+
+export default EtCetera

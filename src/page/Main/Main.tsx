@@ -1,6 +1,6 @@
 import Introduce from "components/Introduce"
 import Career from "components/Career"
-import Certificate from "components/Certificate"
+import Certificate from "components/EtCetera"
 
 const Main: React.FC = () => {
     return (

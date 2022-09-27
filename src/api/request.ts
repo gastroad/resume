@@ -3,15 +3,23 @@ const getCarrerData = async (): Promise<Career[]> => {
         setTimeout(() => { resolve(carrerData) }, 1000)
     })
 }
+const getEtCeteraData = async (): Promise<Certificate[]> => {
+    return new Promise(resolve => {
+        setTimeout(() => { resolve(CertificateData) }, 1000)
+    })
+}
 
 
-export { getCarrerData }
+export { getCarrerData, getEtCeteraData }
 
 
 
 
 
-
+const CertificateData: Certificate[] = [
+    { name: "정보처리기능사", date: "2018.10", content: "18852530052K" },
+    { name: "정보기기운용기능사", date: "2017.07", content: "17843510080C" }
+]
 const carrerData: Career[] = [
     {
         title: "Sellerbook", startDate: "2021.07", endDate: "", content: `마케터를 위한 광고집행 서비스 입니다. 여러 광고 계정을 등록하여 광고 관리, 고객 관리, 영업 등을 지원하고 광고 채널에 대한 성과를 확인할수있는 서비스입니다. React 와 recoil, TyepScript 를 사용해 개발했습니다.`
