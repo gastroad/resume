@@ -1,9 +1,16 @@
 import { FC } from "react"
 const Footer: FC = () => {
     return (
-        <footer>
-            PDF 로 추출
-            워드 로 추출
+        <footer className="footer">
+            <a
+                style={{
+                    cursor: "pointer"
+                }}
+                onClick={() => {
+                    window.open("https://github.com/gastroad/resume")
+                }}>
+                코드 보기
+            </a>
         </footer>
     )
 }

@@ -8,7 +8,7 @@ import Main from "page/Main"
 
 const App: FC = () => {
     return (
-        <div>
+        <div >
             <Header />
             <Main />
             <Footer />
