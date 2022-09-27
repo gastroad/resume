@@ -1,6 +1,7 @@
 import { useEffect, useState, Fragment, useId, FC } from "react"
 import { getLinkListData } from "src/api/request"
 import LinkItem from "./LinkItem"
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
 
 
 
@@ -29,6 +30,7 @@ const Certification: FC = () => {
             {contents.map((content) => {
                 return <LinkItem content={content} key={key} />
             })}
+            {isLoading && <LoadingSpinner />}
         </article>
     )
 }

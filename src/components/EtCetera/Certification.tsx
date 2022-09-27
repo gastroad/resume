@@ -1,6 +1,7 @@
 import { useEffect, useState, Fragment, useId, FC } from "react"
 import { getEtCeteraData } from "src/api/request"
 import CertificationItem from "./CertificationItem"
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
 
 
 
@@ -30,6 +31,7 @@ const Certification: FC = () => {
                     return <CertificationItem content={content} key={`Certification-${index}`} />
                 })}
             </>
+            {isLoading && <LoadingSpinner />}
         </article>
     )
 }
