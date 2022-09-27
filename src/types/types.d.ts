@@ -4,3 +4,7 @@ declare interface Career {
     endDate: string
     content: string
 }
+
+declare interface Certificate {
+    name: string, date: string, content: string
+}
