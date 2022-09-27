@@ -24,7 +24,7 @@ const Certification: FC = () => {
 
     const key = useId();
     return (
-        <article style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+        <article className="certification-list">
             <>
                 {contents.map((content, index) => {
                     return <CertificationItem content={content} key={`Certification-${index}`} />

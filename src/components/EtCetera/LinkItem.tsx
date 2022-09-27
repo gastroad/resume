@@ -1,6 +1,5 @@
-
-
 import { useEffect, useState, Fragment, useId, FC } from "react"
+import cx from "classnames"
 
 interface PropTypes {
     content: Link
@@ -9,21 +8,13 @@ interface PropTypes {
 const Certification: FC<PropTypes> = ({ content }) => {
     const key = useId();
     return (
-        <div key={key} style={{
-            borderRadius: "10px",
-            border: "0.8px solid gray",
-            display: "inline-block",
-            boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px",
-            backgroundColor: "rgb(240 240 240)",
-            padding: "30px",
-            cursor: "pointer",
-            textDecoration: "underline"
-
-        }} onClick={() => {
-            window.open(content.url)
-        }}>
-            <h3 className="h3">{content.name}</h3>
-        </div>
+        <a key={key} className="link-list-item"
+            onClick={() => {
+                window.open(content.url)
+            }}
+        >
+            <h3 className="h4">{content.name}</h3>
+        </a>
     )
 }
 

@@ -25,7 +25,7 @@ const Certification: FC = () => {
 
 
     return (
-        <article style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+        <article className="link-list">
             {contents.map((content) => {
                 return <LinkItem content={content} key={key} />
             })}
