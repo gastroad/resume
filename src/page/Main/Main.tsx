@@ -5,10 +5,12 @@ import Certificate from "components/Certificate"
 const Main: React.FC = () => {
     return (
         <>
+            <br />
             <Introduce />
+            <br />
             <Career />
+            <br />
             <Certificate />
-
         </>
     )
 }

@@ -4,7 +4,7 @@ const Certificate: React.FC = () => {
     return (
         <section>
             <header>
-                경력
+                자격증
             </header>
             <article>
                 2018
