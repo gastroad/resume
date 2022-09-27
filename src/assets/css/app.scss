@@ -1,3 +1,43 @@
-* {
-    font-size: 20px;
+.h2 {
+    font-size: 30px;
+}
+
+.h3 {
+    font-size: 22px;
+}
+.h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.career-list {
+    border-radius: 3px;
+    border: 0.4px solid gray;
+    padding: 10px 5px 0px 5px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    .career-list-item {
+        margin-bottom: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 0.4px solid black;
+        padding: 10px 10px 10px 15px;
+        border-radius: 3px;
+        overflow: auto;
+    }
+    h3 {
+        margin-bottom: 10px;
+        margin-left: 3px;
+    }
+    h4 {
+        display: inline-block;
+    }
+    time {
+        margin: 0px 5px;
+        font-size: 14px;
+        color: rgb(60, 60, 60);
+        font-weight: 500;
+    }
+    pre {
+        margin: 5px 0px 0px 0px;
+        font-size: 14px;
+    }
 }

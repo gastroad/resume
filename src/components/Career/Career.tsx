@@ -23,24 +23,14 @@ const Career: FC = () => {
 
     return (
         <>
-
             <section>
-                <header>
+                <h2 className="h2">
                     경력
-                </header>
+                </h2>
                 <article>
-                    <ul style={{
-                        borderRadius: "3px",
-                        border: "0.4px solid gray",
-                        padding: "10px 5px 0px 5px",
-                        boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px"
-                    }}>
-                        <p
-                            style={{
-                                marginBottom: "10px",
-                                marginLeft: "10px",
-                                fontSize: "22px"
-                            }}>(주)앤서웍스</p>
+                    <ul className="career-list">
+                        <h3 className="h3">
+                            (주)앤서웍스</h3>
                         {contents.map((content, index) => {
                             return <CareerContent content={content} key={`CareerContent-${index}`} />
                         })}
