@@ -22,8 +22,8 @@ const Career: React.FC = () => {
                 경력
             </header>
             <article>
-                {contents.map((content) => {
-                    return <CareerContent content={content} />
+                {contents.map((content, index) => {
+                    return <CareerContent content={content} key={index} />
                 })}
             </article>
         </section>
