@@ -6,7 +6,7 @@ interface PropTypes {
     content: Certificate
 }
 
-const EtCeteraContent: FC<PropTypes> = ({ content }) => {
+const Certification: FC<PropTypes> = ({ content }) => {
     const key = useId();
     return (
         <div key={key} style={{
@@ -25,4 +25,4 @@ const EtCeteraContent: FC<PropTypes> = ({ content }) => {
     )
 }
 
-export default EtCeteraContent
+export default Certification

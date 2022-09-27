@@ -1,39 +1,71 @@
 
 import { useEffect, useState, FC } from "react"
-
-import { getEtCeteraData } from "src/api/request"
-import EtCeteraContent from "./EtCeteraContent"
-import LoadingSpinner from "components/LoadingSpinner/LoadingSpinner"
+import Certification from "./Certification"
+import Link from "./Link"
 
 
 const EtCetera: FC = () => {
-    const [contents, setContents] = useState<Certificate[]>([{
-        name: "", date: "", content: ""
-    }]);
-    const [isLoading, setIsLoading] = useState(false)
-
-    const getEtCeteraContents = async () => {
-        setIsLoading(true)
-        const etCeteraData = await getEtCeteraData()
-        setContents(etCeteraData)
-        setIsLoading(false)
-    }
-
-    useEffect(() => {
-        getEtCeteraContents()
-    }, []);
-
     return (
         <>
             <h2 className="h2">
                 기타
             </h2>
-            <article style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
-                {contents.map((content, index) => {
-                    return <EtCeteraContent content={content} key={`EtCeteraContent-${index}`} />
-                })}
-            </article>
-            {isLoading && <LoadingSpinner />}
+            <Certification />
+            <Link />
+            {/* <article>
+                <>
+                    <div style={{
+                        borderRadius: "10px",
+                        border: "0.8px solid gray",
+                        display: "inline-block",
+                        boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px",
+                        backgroundColor: "rgb(240 240 240)",
+                        padding: "30px"
+                    }}>
+                        linkedin
+                    </div>
+                    <div style={{
+                        borderRadius: "10px",
+                        border: "0.8px solid gray",
+                        display: "inline-block",
+                        boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px",
+                        backgroundColor: "rgb(240 240 240)",
+                        padding: "30px"
+                    }}>
+                        gitblog
+                    </div>
+                    <div style={{
+                        borderRadius: "10px",
+                        border: "0.8px solid gray",
+                        display: "inline-block",
+                        boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px",
+                        backgroundColor: "rgb(240 240 240)",
+                        padding: "30px"
+                    }}>
+                        resume/portfolio
+                    </div>
+                    <div style={{
+                        borderRadius: "10px",
+                        border: "0.8px solid gray",
+                        display: "inline-block",
+                        boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px",
+                        backgroundColor: "rgb(240 240 240)",
+                        padding: "30px"
+                    }}>
+                        slides
+                    </div>
+                    <div style={{
+                        borderRadius: "10px",
+                        border: "0.8px solid gray",
+                        display: "inline-block",
+                        boxShadow: "rgb(100 100 111 / 20%) 0px 7px 29px 0px",
+                        backgroundColor: "rgb(240 240 240)",
+                        padding: "30px"
+                    }}>
+                        Medium
+                    </div>
+                </>
+            </article> */}
         </>
     )
 }

@@ -8,9 +8,14 @@ const getEtCeteraData = async (): Promise<Certificate[]> => {
         setTimeout(() => { resolve(CertificateData) }, 1000)
     })
 }
+const getLinkListData = async (): Promise<Link[]> => {
+    return new Promise(resolve => {
+        setTimeout(() => { resolve(LinkData) }, 1000)
+    })
+}
 
 
-export { getCarrerData, getEtCeteraData }
+export { getCarrerData, getEtCeteraData, getLinkListData }
 
 
 
@@ -19,6 +24,13 @@ export { getCarrerData, getEtCeteraData }
 const CertificateData: Certificate[] = [
     { name: "정보처리기능사", date: "2018.10", content: "18852530052K" },
     { name: "정보기기운용기능사", date: "2017.07", content: "17843510080C" }
+]
+const LinkData: Link[] = [
+    { name: "linkedin", url: "https://www.linkedin.com/in/gostroad/" },
+    { name: "gitblog", url: "https://gastroad.github.io/" },
+    { name: "resume/portfolio", url: "https://gastroad.github.io/resume/" },
+    { name: "slides", url: "https://slides.com/gostroad" },
+    { name: "Medium", url: "https://medium.com/@gostroad37" },
 ]
 const carrerData: Career[] = [
     {
