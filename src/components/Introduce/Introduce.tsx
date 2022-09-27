@@ -3,9 +3,9 @@ import { FC } from "react"
 const Introduce: FC = () => {
     return (
         <section>
-            <header>
+            <h2 className="h2">
                 간단소개
-            </header>
+            </h2>
             <article>
                 프론트엔드 개발자로 스타트업 에서 웹 서비스를 개발, 운영을 해 보았습니다.
                 주로 React, TypeScript 를 사용해서 개발합니다

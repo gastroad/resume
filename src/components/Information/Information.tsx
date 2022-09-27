@@ -3,9 +3,9 @@ import { FC } from "react"
 const Information: FC = () => {
     return (
         <section>
-            <header>
+            <h2 className="h2">
                 인적사항
-            </header>
+            </h2>
             <article>
                 이름 : 진현성
                 생년월일 : 2000.02.15

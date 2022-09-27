@@ -26,9 +26,9 @@ const EtCetera: FC = () => {
     return (
         <>
             <section>
-                <header>
+                <h2 className="h2">
                     자격증
-                </header>
+                </h2>
                 <article>
                     {contents.map((content, index) => {
                         return <EtCeteraContent content={content} key={`EtCeteraContent-${index}`} />
