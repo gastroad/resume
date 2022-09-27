@@ -24,8 +24,8 @@ const EtCetera: React.FC = () => {
                 자격증
             </header>
             <article>
-                {contents.map((content) => {
-                    return <EtCeteraContent content={content} />
+                {contents.map((content, index) => {
+                    return <EtCeteraContent content={content} key={`EtCeteraContent-${index}`} />
                 })}
             </article>
         </section>
