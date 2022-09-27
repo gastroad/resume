@@ -1,12 +1,12 @@
 
 
-import { useEffect, useState, Fragment, useId } from "react"
+import { useEffect, useState, Fragment, useId, FC } from "react"
 
 interface PropTypes {
     content: Certificate
 }
 
-const EtCeteraContent: React.FC<PropTypes> = ({ content }) => {
+const EtCeteraContent: FC<PropTypes> = ({ content }) => {
     const key = useId();
     return (
         <Fragment key={key}>

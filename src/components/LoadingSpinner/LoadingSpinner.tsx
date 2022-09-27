@@ -1,6 +1,6 @@
+import { FC } from "react"
 import "./LoadingSpinner.scss"
-
-const LoadingSpinner = () => {
+const LoadingSpinner: FC = () => {
     return (
         <div className="lds-ring"
             style={{
@@ -14,7 +14,12 @@ const LoadingSpinner = () => {
                 justifyContent: "center",
                 alignItems: "center",
 
-            }}><div></div><div></div><div></div><div></div></div >
+            }}>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div >
 
     )
 }

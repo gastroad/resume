@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, FC } from "react"
 import { getCarrerData } from "src/api/request"
 import CareerContent from "./CareerContent"
 
-const Career: React.FC = () => {
+const Career: FC = () => {
     const [contents, setContents] = useState<Career[]>([{
         title: "", startDate: "", endDate: "", content: ""
     }]);

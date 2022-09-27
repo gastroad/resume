@@ -1,10 +1,10 @@
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, FC } from "react"
 import { getEtCeteraData } from "src/api/request"
 import EtCeteraContent from "./EtCeteraContent"
 
 
-const EtCetera: React.FC = () => {
+const EtCetera: FC = () => {
     const [contents, setContents] = useState<Certificate[]>([{
         name: "", date: "", content: ""
     }]);

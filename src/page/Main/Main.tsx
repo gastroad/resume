@@ -1,8 +1,10 @@
+import { FC } from "react"
+
 import Introduce from "components/Introduce"
 import Career from "components/Career"
 import Certificate from "components/EtCetera"
 
-const Main: React.FC = () => {
+const Main: FC = () => {
     return (
         <>
             <br />

@@ -1,4 +1,6 @@
-const Header: React.FC = () => {
+import { FC } from "react"
+
+const Header: FC = () => {
     return (
         <header>
             이름 : 진현성

@@ -1,6 +1,6 @@
+import { FC } from "react"
 
-
-const Introduce: React.FC = () => {
+const Introduce: FC = () => {
     return (
         <section>
             <header>
