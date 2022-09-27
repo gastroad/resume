@@ -7,10 +7,10 @@ const Information: FC = () => {
                 인적사항
             </h2>
             <article>
-                이름 : 진현성
-                생년월일 : 2000.02.15
-                휴대폰 : 010-7188-8760
-                email : gostroad37@gmail.com
+                <p style={{ margin: "10px" }}>이름 : 진현성</p>
+                <p style={{ margin: "10px" }}>생년월일 : 2000.02.15</p>
+                <p style={{ margin: "10px" }}>휴대폰 : 010-7188-8760</p>
+                <p style={{ margin: "10px" }}>email : gostroad37@gmail.com</p>
             </article>
         </>
     )
