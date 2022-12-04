@@ -26,11 +26,11 @@ const CertificateData: Certificate[] = [
     { name: "정보기기운용기능사", date: "2017.07", content: "17843510080C" }
 ]
 const LinkData: Link[] = [
-    { name: "linkedin", url: "https://www.linkedin.com/in/gostroad/" },
+    // { name: "linkedin", url: "https://www.linkedin.com/in/gostroad/" },
     { name: "gitblog", url: "https://gastroad.github.io/" },
     { name: "resume/portfolio", url: "https://gastroad.github.io/resume/" },
     { name: "slides", url: "https://slides.com/gostroad" },
-    { name: "Medium", url: "https://medium.com/@gostroad37" },
+    // { name: "Medium", url: "https://medium.com/@gostroad37" },
 ]
 const carrerData: Career[] = [
     {
