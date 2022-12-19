@@ -10,7 +10,7 @@ const Information: FC = () => {
                 <p style={{ margin: "10px 0px" }}>이름 : 진현성</p>
                 <p style={{ margin: "10px 0px" }}>생년월일 : 2000.02.15</p>
                 <p style={{ margin: "10px 0px" }}>휴대폰 : 010-7188-8760</p>
-                <p style={{ margin: "10px 0px" }}>email : gostroad37@gmail.com</p>
+                <p style={{ margin: "10px 0px" }}>email : coldpotatosweet@gmail.com</p>
             </article>
         </>
     )
