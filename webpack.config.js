@@ -42,6 +42,10 @@ module.exports = {
                 use: ['ts-loader']
             },
             {
+                test: /\.(png|jpe?g|gif|svg|webp)$/i,
+                use: ['file-loader']
+            },
+            {
                 test: /\.s[ac]ss$/i,
                 use: [
                     "style-loader",
