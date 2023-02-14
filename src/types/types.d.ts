@@ -11,3 +11,9 @@ declare interface Certificate {
 declare interface Link {
     name: stirng, url: string
 }
+declare interface PreviewCardDatum {
+    img: string
+    title: string
+    paragraph: string
+    test: () => void
+}

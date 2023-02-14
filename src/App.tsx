@@ -16,21 +16,16 @@ import Certificate from "components/EtCetera"
 const App: FC = () => {
     const router = createBrowserRouter([
         {
-            path: "/preview",
+            path: "/",
             element: <Preview />,
             errorElement: <>에러</>,
         },
         {
-            path: "/",
-            element: <>root</>,
-            errorElement: <>에러</>,
-        },
-        {
-            path: "/main",
+            path: "/resume",
             element: <MainLayout />,
             children: [
                 {
-                    path: "/main/info",
+                    path: "/resume/info",
                     element: <>
                         <Information />
                         <Introduce />
