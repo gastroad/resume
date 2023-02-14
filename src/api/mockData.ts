@@ -6,8 +6,10 @@ export const CertificateData: Certificate[] = [
 export const LinkData: Link[] = [
     // { name: "linkedin", url: "https://www.linkedin.com/in/gostroad/" },
     { name: "gitblog", url: "https://gastroad.github.io/" },
-    { name: "resume/portfolio", url: "https://gastroad.github.io/resume/" },
-    { name: "slides", url: "https://slides.com/coldpotato" },
+    { name: "portfolio", url: "https://gastroad.github.io/portfolio" },
+
+    // { name: "resume/portfolio", url: "https://gastroad.github.io/resume/" },
+    // { name: "slides", url: "https://slides.com/coldpotato" },
     // { name: "Medium", url: "https://medium.com/@gostroad37" },
 ]
 export const carrerData: Career[] = [
