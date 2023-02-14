@@ -1,7 +1,6 @@
 import { useEffect, useState, Fragment, useId, FC } from "react"
 import { getEtCeteraData } from "src/api/request"
 import CertificationItem from "./CertificationItem"
-import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
 
 
 
@@ -10,13 +9,10 @@ const Certification: FC = () => {
         name: "", date: "", content: ""
     }]);
 
-    const [isLoading, setIsLoading] = useState(false)
 
     const getEtCeteraContents = async () => {
-        setIsLoading(true)
         const etCeteraData = await getEtCeteraData()
         setContents(etCeteraData)
-        setIsLoading(false)
     }
 
     useEffect(() => {
@@ -26,12 +22,14 @@ const Certification: FC = () => {
     const key = useId();
     return (
         <article className="certification-list">
+            <h2 className="h2">
+                자격증
+            </h2>
             <>
                 {contents.map((content, index) => {
                     return <CertificationItem content={content} key={`Certification-${index}`} />
                 })}
             </>
-            {isLoading && <LoadingSpinner />}
         </article>
     )
 }

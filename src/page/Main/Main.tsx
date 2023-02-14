@@ -3,7 +3,8 @@ import { FC } from "react"
 import Information from "components/Information"
 import Introduce from "components/Introduce"
 import Career from "components/Career"
-import Certificate from "components/EtCetera"
+import Certification from "src/components/Certification"
+import Link from "src/components/Link"
 
 const Main: FC = () => {
     return (
@@ -11,7 +12,8 @@ const Main: FC = () => {
             <Information />
             <Introduce />
             <Career />
-            <Certificate />
+            <Certification />
+            <Link />
         </section>
     )
 }
