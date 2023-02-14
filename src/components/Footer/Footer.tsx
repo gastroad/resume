@@ -4,14 +4,18 @@ const Footer: FC = () => {
         <footer className="footer">
             <a
                 style={{
-                    cursor: "pointer"
+                    cursor: "pointer",
+                    color: "white",
+                    textDecoration: "none"
                 }}
-                onClick={() => {
-                    window.open("https://github.com/gastroad/resume")
-                }}>
-                코드 보기
+                href="mailto:coldpotatosweet@gmail.com"
+            >
+                메일 보내기
             </a>
         </footer>
     )
 }
+
+
+
 export default Footer
