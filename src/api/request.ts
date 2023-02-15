@@ -1,6 +1,5 @@
 import {
     CertificateData,
-    LinkData,
     carrerData
 } from "./mockData"
 
@@ -14,14 +13,9 @@ const getEtCeteraData = async (): Promise<Certificate[]> => {
         setTimeout(() => { resolve(CertificateData) }, 1000)
     })
 }
-const getLinkListData = async (): Promise<Link[]> => {
-    return new Promise(resolve => {
-        setTimeout(() => { resolve(LinkData) }, 1000)
-    })
-}
 
 
-export { getCarrerData, getEtCeteraData, getLinkListData }
+export { getCarrerData, getEtCeteraData }
 
 
 
