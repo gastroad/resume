@@ -15,7 +15,7 @@ const CareerContent: FC<PropTypes> = ({ content }) => {
             <time>{content.startDate}</time>
             ~
             <time>{content.endDate}</time>
-            <pre>{content.content}</pre>
+            <p>{content.content}</p>
         </li >
     )
 }

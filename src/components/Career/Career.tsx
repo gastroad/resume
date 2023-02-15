@@ -18,7 +18,7 @@ const Career: FC = () => {
     }, []);
 
     return (
-        <article>
+        <article style={{ backgroundColor: "blue" }}>
             <h2 className="h2">
                 경력
             </h2>

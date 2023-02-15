@@ -21,7 +21,7 @@ const Certification: FC = () => {
 
     const key = useId();
     return (
-        <article className="certification-list">
+        <article className="certification-list" style={{ backgroundColor: "red" }}>
             <h2 className="h2">
                 자격증
             </h2>

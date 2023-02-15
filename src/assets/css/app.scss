@@ -1,6 +1,29 @@
 article {
-    background-color: white;
-    width: 100vw;
+    width: calc(100vw - 70px);
     height: 100vh;
-    border: 1px solid red;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: rgba(255, 255, 255, 0.7);
+    overflow: auto;
+    // padding: 0px 5vw; 아티클말고 그 하위
+    // display: flex;
+    // flex-flow: column;
+    // justify-content: center;
+    // align-items: center;
+    h2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+/* chrome and chromium based */
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
