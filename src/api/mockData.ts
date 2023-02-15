@@ -3,6 +3,8 @@ export const CertificateData: Certificate[] = [
     { name: "정보처리기능사", date: "2018.10", content: "18852530052K" },
     { name: "정보기기운용기능사", date: "2017.07", content: "17843510080C" }
 ]
+
+
 export const carrerData: Career[] = [
     {
         title: "Sellerbook", startDate: "2021.07", endDate: "", content: `마케터를 위한 광고 집행 서비스입니다.
