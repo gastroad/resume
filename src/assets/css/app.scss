@@ -1,4 +1,4 @@
-article {
+section {
     width: calc(100vw - 70px);
     height: 100vh;
     font-weight: 400;
@@ -7,14 +7,73 @@ article {
     letter-spacing: 0.01071em;
     color: rgba(255, 255, 255, 0.7);
     overflow: auto;
-    // padding: 0px 5vw; 아티클말고 그 하위
-    // display: flex;
-    // flex-flow: column;
-    // justify-content: center;
-    // align-items: center;
+    font-size: 1.3125rem;
     h2 {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
         color: white;
+    }
+    .infomation-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+    }
+    .introduce-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+    }
+    .career-wrapper {
+    }
+    .certification-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+    }
+    .link-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+        .link-txt {
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            font-size: 2.25rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+article {
+    padding: 0px 5vw;
+}
+
+.certification-item {
+    margin: 30px auto;
+    margin-bottom: 30px;
+    display: block;
+    background-color: rgb(18, 18, 18);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    max-width: 345px;
+    padding: 16px;
+    .certification-item-txt {
+        margin: 0px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.43;
+        letter-spacing: 0.01071em;
+        color: rgba(255, 255, 255, 0.7);
     }
 }
 
