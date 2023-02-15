@@ -1,4 +1,4 @@
-import { FC, useState, useEffect, useCallback } from "react"
+import { FC } from "react"
 
 import Information from "components/Information"
 import Introduce from "components/Introduce"

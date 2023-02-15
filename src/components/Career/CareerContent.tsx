@@ -1,15 +1,14 @@
 
 
-import { useEffect, useId, useState, Fragment, FC } from "react"
+import { FC } from "react"
 
 interface PropTypes {
     content: Career
 }
 
 const CareerContent: FC<PropTypes> = ({ content }) => {
-    const key = useId();
     return (
-        <li key={key} className="career-list-item" style={{ marginBottom: "20px", boxShadow: "rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px" }}>
+        <li className="career-list-item" style={{ marginBottom: "20px", boxShadow: "rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px" }}>
             <h4 className="h4" style={{ color: "white" }}>{content.title}</h4>
             <time
                 style={{

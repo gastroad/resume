@@ -6,9 +6,7 @@ import Main from "page/Main"
 const App: FC = () => {
     return (
         <div >
-            {/* <Header /> */}
             <Main />
-            {/* <Footer /> */}
         </div>
     )
 

@@ -1,4 +1,4 @@
-import { useEffect, useState, useId, FC } from "react"
+import { useEffect, useState, FC } from "react"
 import { getEtCeteraData } from "src/api/request"
 import CertificationItem from "./CertificationItem"
 
