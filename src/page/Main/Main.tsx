@@ -12,7 +12,7 @@ import { LeftArrow, RightArrow } from "components/Arrow/Arrow"
 const Main: FC = () => {
 
     return (
-        <section>
+        <div>
             <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
                 <Information />
                 <Introduce />
@@ -20,7 +20,7 @@ const Main: FC = () => {
                 <Certification />
                 <Link />
             </ScrollMenu>
-        </section>
+        </div>
     )
 }
 export default Main
