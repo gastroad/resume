@@ -1,4 +1,4 @@
-import { useEffect, useState, Fragment, useId, FC } from "react"
+import { useEffect, useState, useId, FC } from "react"
 import { getEtCeteraData } from "src/api/request"
 import CertificationItem from "./CertificationItem"
 
@@ -19,18 +19,19 @@ const Certification: FC = () => {
         getEtCeteraContents()
     }, []);
 
-    const key = useId();
     return (
-        <article className="certification-list" style={{ backgroundColor: "red" }}>
-            <h2 className="h2">
-                자격증
-            </h2>
-            <>
-                {contents.map((content, index) => {
-                    return <CertificationItem content={content} key={`Certification-${index}`} />
-                })}
-            </>
-        </article>
+        <section>
+            <article className="certification-wrapper" >
+                <h2 className="h2">
+                    자격증
+                </h2>
+                <>
+                    {contents.map((content, index) => {
+                        return <CertificationItem content={content} key={`Certification-${index}`} />
+                    })}
+                </>
+            </article>
+        </section>
     )
 }
 
