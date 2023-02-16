@@ -4,7 +4,7 @@ const Information: FC = () => {
     return (
         <section>
             <article className="infomation-wrapper">
-                <h2 className="h2">인적사항</h2>
+                <h2>인적사항</h2>
                 <div>
                     <p>이름 : <span>진현성</span></p>
                     <p>생년월일 : <span>2000.02.15</span> </p>

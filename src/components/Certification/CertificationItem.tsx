@@ -9,11 +9,9 @@ interface PropTypes {
 const Certification: FC<PropTypes> = ({ content }) => {
     return (
         <div className="certification-item">
-            <div className="certification-item-txt">
-                <p className="paragraph" style={{ marginBottom: "10px" }}>자격증 : <span style={{ fontWeight: 'bold', color: "white" }}>{content.name}</span></p>
-                <time className="paragraph" style={{ marginBottom: "10px", display: "block" }}>취득일자 : {content.date}</time>
-                <p className="paragraph" >자격증번호 :{content.content}</p>
-            </div>
+            <p>자격증 : <span className="highlight">{content.name}</span></p>
+            <time>취득일자 : {content.date}</time>
+            <p >자격증번호 :{content.content}</p>
         </div>
     )
 }

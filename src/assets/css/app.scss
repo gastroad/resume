@@ -25,15 +25,60 @@ section {
         align-items: center;
         flex-flow: column;
         height: 100%;
+        .introduce-txt {
+            word-break: keep-all;
+        }
     }
     .career-wrapper {
+        h2 {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 3vh;
+        }
+        .career-list {
+            time {
+                font-size: 0.875rem;
+                color: rgb(220, 220, 220);
+                font-weight: 500;
+            }
+            .career-list-item {
+                margin-bottom: 20px;
+                box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+                    rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+                .highlight {
+                    color: white;
+                }
+                .career-list-item-txt {
+                    font-size: 0.875rem;
+                }
+            }
+        }
     }
+
     .certification-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
         height: 100%;
+        .certification-item {
+            margin: 30px auto;
+            display: block;
+            background-color: rgb(18, 18, 18);
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: 4px;
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+                rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+            max-width: 345px;
+            padding: 16px;
+            font-size: 1.2rem;
+            line-height: 1.43;
+            letter-spacing: 0.01071em;
+            .highlight {
+                font-weight: bold;
+                color: white;
+            }
+        }
     }
     .link-wrapper {
         display: flex;
@@ -54,27 +99,6 @@ section {
 }
 article {
     padding: 0px 5vw;
-}
-
-.certification-item {
-    margin: 30px auto;
-    margin-bottom: 30px;
-    display: block;
-    background-color: rgb(18, 18, 18);
-    color: rgb(255, 255, 255);
-    transition-duration: 0.5s;
-    border-radius: 4px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-    max-width: 345px;
-    padding: 16px;
-    .certification-item-txt {
-        margin: 0px;
-        font-weight: 400;
-        font-size: 1.2rem;
-        line-height: 1.43;
-        letter-spacing: 0.01071em;
-        color: rgba(255, 255, 255, 0.7);
-    }
 }
 
 /* chrome and chromium based */

@@ -22,9 +22,7 @@ const Certification: FC = () => {
     return (
         <section>
             <article className="certification-wrapper" >
-                <h2 className="h2">
-                    자격증
-                </h2>
+                <h2>자격증</h2>
                 <>
                     {contents.map((content, index) => {
                         return <CertificationItem content={content} key={`Certification-${index}`} />
