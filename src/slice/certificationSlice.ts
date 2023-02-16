@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchCertificationData } from "../api/request"
+
+import { fetchCertificationData } from "api/request"
 
 export const certificationSlice = createSlice({
     name: 'certification',

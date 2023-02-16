@@ -1,7 +1,8 @@
 import { FC } from "react"
-import Main from "page/Main"
 import { Provider } from 'react-redux'
-import store from "./store"
+
+import Main from "page/Main"
+import store from "src/store"
 
 
 const App: FC = () => {

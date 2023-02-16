@@ -1,9 +1,10 @@
 import { useEffect, FC } from "react"
 import { useSelector } from "react-redux"
 
-import { RootState, useAppDispatch } from "../../store"
+import { RootState, useAppDispatch } from "src/store"
+import { fetchCarrerData } from "api/request"
+
 import CareerContent from "./CareerContent"
-import { fetchCarrerData } from "../../api/request"
 
 const Career: FC = () => {
     const carrer = useSelector((state: RootState) => state.career)

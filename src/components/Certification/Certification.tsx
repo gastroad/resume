@@ -1,11 +1,10 @@
-import { useEffect, useState, FC } from "react"
-import { getCertificationData } from "src/api/request"
-import CertificationItem from "./CertificationItem"
-
-
+import { useEffect, FC } from "react"
 import { useSelector } from "react-redux"
-import { RootState, useAppDispatch } from "../../store"
-import { fetchCertificationData } from "../../api/request"
+
+import { RootState, useAppDispatch } from "src/store"
+import { fetchCertificationData } from "api/request"
+
+import CertificationItem from "./CertificationItem"
 
 const Certification: FC = () => {
     const certification = useSelector((state: RootState) => state.certification)

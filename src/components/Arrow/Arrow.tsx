@@ -1,6 +1,5 @@
 
 import { FC, ReactNode, useContext, useEffect, useState } from "react";
-
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
 interface Props {

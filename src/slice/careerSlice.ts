@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchCarrerData } from "../api/request"
+
+import { fetchCarrerData } from "api/request"
 
 export const carrerSlice = createSlice({
     name: 'carrer',
