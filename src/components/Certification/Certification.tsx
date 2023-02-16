@@ -1,30 +1,27 @@
 import { useEffect, useState, FC } from "react"
-import { getEtCeteraData } from "src/api/request"
+import { getCertificationData } from "src/api/request"
 import CertificationItem from "./CertificationItem"
 
 
+import { useSelector } from "react-redux"
+import { RootState, useAppDispatch } from "../../store"
+import { fetchCertificationData } from "../../api/request"
 
 const Certification: FC = () => {
-    const [contents, setContents] = useState<Certificate[]>([{
-        name: "", date: "", content: ""
-    }]);
-
-
-    const getEtCeteraContents = async () => {
-        const etCeteraData = await getEtCeteraData()
-        setContents(etCeteraData)
-    }
-
+    const certification = useSelector((state: RootState) => state.certification)
+    const dispatch = useAppDispatch()
     useEffect(() => {
-        getEtCeteraContents()
-    }, []);
+        dispatch(fetchCertificationData())
+    }, [])
+
+    const { certificationData } = certification
 
     return (
         <section>
             <article className="certification-wrapper" >
                 <h2>자격증</h2>
                 <>
-                    {contents.map((content, index) => {
+                    {certificationData.map((content, index) => {
                         return <CertificationItem content={content} key={`Certification-${index}`} />
                     })}
                 </>

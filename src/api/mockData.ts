@@ -1,5 +1,5 @@
 
-export const CertificateData: Certificate[] = [
+export const CertificationData: Certification[] = [
     { name: "정보처리기능사", date: "2018.10", content: "18852530052K" },
     { name: "정보기기운용기능사", date: "2017.07", content: "17843510080C" }
 ]

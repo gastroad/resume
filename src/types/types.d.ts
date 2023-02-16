@@ -5,6 +5,6 @@ declare interface Career {
     content: string
 }
 
-declare interface Certificate {
+declare interface Certification {
     name: string, date: string, content: string
 }

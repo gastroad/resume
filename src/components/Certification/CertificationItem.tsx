@@ -3,7 +3,7 @@
 import { FC } from "react"
 
 interface PropTypes {
-    content: Certificate
+    content: Certification
 }
 
 const Certification: FC<PropTypes> = ({ content }) => {

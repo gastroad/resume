@@ -86,6 +86,7 @@ function RightArrow() {
             setDisabled(isLastItemVisible);
         }
     }, [isLastItemVisible, visibleElements]);
+
     useEffect(() => {
         const temp = (e: any) => {
             if (e.code == "ArrowRight") {

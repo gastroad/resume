@@ -1,21 +1,17 @@
-import { useEffect, useState, FC } from "react"
+import { useEffect, FC } from "react"
+import { useSelector } from "react-redux"
 
-import { getCarrerData } from "src/api/request"
+import { RootState, useAppDispatch } from "../../store"
 import CareerContent from "./CareerContent"
+import { fetchCarrerData } from "../../api/request"
 
 const Career: FC = () => {
-    const [contents, setContents] = useState<Career[]>([{
-        title: "", startDate: "", endDate: "", content: ""
-    }]);
-
-    const getCarrerContents = async () => {
-        const carrerData = await getCarrerData()
-        setContents(carrerData)
-    }
-
+    const carrer = useSelector((state: RootState) => state.career)
+    const dispatch = useAppDispatch()
     useEffect(() => {
-        getCarrerContents()
-    }, []);
+        dispatch(fetchCarrerData())
+    }, [])
+    const { carrerData } = carrer
 
     return (
         <section>
@@ -26,7 +22,7 @@ const Career: FC = () => {
                         (주)앤서웍스
                         <time> 2017.09 ~ 2022.07</time>
                     </h3>
-                    {contents.map((content, index) => {
+                    {carrerData.map((content, index) => {
                         return <CareerContent content={content} key={`CareerContent-${index}`} />
                     })}
 
